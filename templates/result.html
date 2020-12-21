@@ -39,10 +39,10 @@
     </nav>
   </div>
   
-  <p style=" font-size: 350%; text-align: center; padding-top: 10%">{% if prediction==1 %}
+  <p style=" font-size: 350%; text-align: center; padding-top: 10%">{% if prediction==0 %}
   Sorry, You are not eligible for the loan 😔😔 
   <img class="gif" src="{{ url_for('static', filename='no_loan.webp') }}" alt="Diabetes Image">
-  {% elif prediction==0 %}
+  {% elif prediction==1 %}
   Congrats, You are eligible for the loan 😄😄
   <img class="gif1" src="{{ url_for('static', filename='yes_loan.webp') }}" alt="Not Diabetes Image">
   {% endif %}</p>
